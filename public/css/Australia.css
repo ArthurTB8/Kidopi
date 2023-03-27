@@ -1,0 +1,21 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    
+    background-image: url("/public/img/bandeira-australia.avif");
+}
+
+p {
+    text-align: center;
+    column-gap: 10px;
+    width: 350px;
+	display: inline-block;
+    border-top: 10px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%);
+    border-radius: 15px;
+    color: #093366;
+    background-color: #D3D3D3;
+
+}
