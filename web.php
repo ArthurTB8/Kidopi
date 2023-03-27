@@ -110,18 +110,18 @@ Route::get('/comparar/resultado', function (Request $_request) {
     $primeiroPaisUrl = Http::get('https://dev.kidopilabs.com.br/exercicio/covid.php?pais='. ('pais1'));
     $primeiroPaisVar = json_decode($primeiroPaisUrl->getBody());
 
-    $nomePais1 = $primeiroPaisVar['ProvinciaEstado'];
-    $confirmadosPais1 = intval($primeiroPaisVar['Confirmados']);
-    $mortesPais1 = intval($primeiroPaisVar['Mortos']);
-    $mediaPais1 = $mortesPais1/$confirmadosPais1;
+    $nomePais1  = 'ProvinciaEstado';
+    $confirmadosPais1 = 'Confirmados';
+    $mortesPais1 = 'Mortos';
+    $mediaPais1 = (int)$mortesPais1/(int)$confirmadosPais1;
 
     $segundoPaisUrl = Http::get('https://dev.kidopilabs.com.br/exercicio/covid.php?pais='. ('pais2'));
     $segundoPaisVar = json_decode($segundoPaisUrl->getBody());
 
-    $nomePais2 = $segundoPaisVar['ProvinciaEstado'];
-    $confirmadosPais2 = intval($segundoPaisVar['Confirmados']);
-    $mortesPais2 = intval($segundoPaisVar['Mortos']);
-    $mediaPais2 = $mortesPais2/$confirmadosPais2;
+    $nomePais2 = 'ProvinciaEstado';
+    $confirmadosPais2 = 'Confirmados';
+    $mortesPais2 = 'Mortos';
+    $mediaPais2 = (int)$mortesPais2/(int)$confirmadosPais2;
 
 
 
